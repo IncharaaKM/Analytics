@@ -1,229 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unlock Your Website's Magic with Google Analytics!</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f8ff; /* Alice Blue - soft background */
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.5rem;
-        }
-        /* Custom scrollbar for a cuter look */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #a7d9f7; /* Soft blue */
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #8ecdef; /* Slightly darker blue on hover */
-        }
-    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QN0NMCD2M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0QN0NMCD2M');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unlock Your Website's Magic with Google Analytics!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #a7d9f7;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #8ecdef;
+    }
+    @keyframes bounce-slow {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+    .animate-bounce-slow {
+      animation: bounce-slow 2s infinite ease-in-out;
+    }
+  </style>
 </head>
 <body class="overflow-x-hidden">
 
-    <!-- Header -->
-    <header class="bg-gradient-to-r from-pink-300 to-purple-300 py-6 shadow-lg rounded-b-3xl">
-        <div class="container flex justify-between items-center">
-            <h1 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
-                ✨ Analytics Magic!
-            </h1>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#about" class="text-white hover:text-pink-100 transition duration-300 text-lg font-medium">About</a></li>
-                    <li><a href="#features" class="text-white hover:text-pink-100 transition duration-300 text-lg font-medium">Features</a></li>
-                    <li><a href="#benefits" class="text-white hover:text-pink-100 transition duration-300 text-lg font-medium">Benefits</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Your full design here... -->
 
-    <!-- Hero Section -->
-    <section class="py-20 bg-gradient-to-br from-blue-100 to-indigo-100 text-center rounded-b-3xl md:rounded-b-none md:rounded-t-3xl shadow-xl mx-4 mt-8 md:mx-auto">
-        <div class="container">
-            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
-                <div class="md:w-1/2">
-                    <h2 class="text-4xl md:text-6xl font-extrabold text-purple-700 leading-tight mb-6">
-                        Discover Your Website's Story with <span class="text-pink-500">Google Analytics</span>!
-                    </h2>
-                    <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-                        Unravel the mysteries of your visitors, understand their journey, and make smart decisions to grow your online presence. It's like having a superpower for your website!
-                    </p>
-                    <a href="#cta" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-lg">
-                        Get Started with Analytics!
-                    </a>
-                </div>
-                <div class="md:w-1/2 flex justify-center">
-                    <!-- Cute SVG icon representing data/insights -->
-                    <svg class="w-64 h-64 md:w-80 md:h-80 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
-                        <path d="M9 16h6v2H9zM9 13h6v2H9zM9 10h6v2H9z" fill="#fff" />
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Only updating CTA section below -->
+  <section id="cta" class="py-20 bg-gradient-to-bl from-yellow-100 to-orange-100 text-center rounded-3xl shadow-xl mx-4 my-8 md:mx-auto">
+    <div class="container">
+      <h3 class="text-4xl md:text-5xl font-extrabold text-orange-700 mb-6 leading-tight">
+        Ready to Uncover Your Website's Secrets? 🤩
+      </h3>
+      <p class="text-lg md:text-xl text-gray-700 mb-10 max-w-2xl mx-auto">
+        It's super easy to get started! Integrate Google Analytics today and begin your journey to a more informed and successful online presence.
+      </p>
+      <a href="https://incharamurthy.github.io/WebDesignCourse/" target="_blank" rel="noopener noreferrer"
+         class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-5 px-10 rounded-full shadow-xl transform hover:scale-105 transition duration-300 ease-in-out text-xl animate-bounce-slow">
+        Start Your Analytics Adventure!
+      </a>
+      <p class="text-sm text-gray-500 mt-6">
+        (Psst... it's completely FREE to use!)
+      </p>
+    </div>
+  </section>
 
-    <!-- About Google Analytics Section -->
-    <section id="about" class="py-16 bg-white rounded-3xl shadow-md mx-4 mt-8 md:mx-auto">
-        <div class="container text-center">
-            <h3 class="text-3xl font-bold text-blue-600 mb-8">What is Google Analytics? 🤔</h3>
-            <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                Google Analytics is a free web analytics service that tracks and reports website traffic. Think of it as a friendly detective that gathers clues about how visitors interact with your website. It helps you understand things like:
-            </p>
-            <ul class="list-disc list-inside text-left text-gray-700 text-lg mt-6 space-y-2 max-w-xl mx-auto">
-                <li>Where do your visitors come from? (e.g., Google search, social media, direct)</li>
-                <li>What pages do they visit?</li>
-                <li>How long do they stay?</li>
-                <li>What actions do they take (e.g., make a purchase, fill a form)?</li>
-                <li>And much, much more!</li>
-            </ul>
-            <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mt-6">
-                With these insights, you can optimize your website, content, and marketing efforts to better serve your audience and achieve your goals!
-            </p>
-        </div>
-    </section>
-
-    <!-- Key Features Section -->
-    <section id="features" class="py-16 bg-gradient-to-r from-green-100 to-teal-100 rounded-3xl shadow-md mx-4 mt-8 md:mx-auto">
-        <div class="container text-center">
-            <h3 class="text-3xl font-bold text-teal-700 mb-10">Amazing Features You'll Love! ❤️</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Feature Card 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
-                    <div class="text-5xl mb-4">📈</div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Audience Insights</h4>
-                    <p class="text-gray-600">Understand who your visitors are, their demographics, interests, and behavior patterns.</p>
-                </div>
-                <!-- Feature Card 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
-                    <div class="text-5xl mb-4">🚀</div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Acquisition Reports</h4>
-                    <p class="text-gray-600">See where your traffic comes from and which channels are performing best.</p>
-                </div>
-                <!-- Feature Card 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
-                    <div class="text-5xl mb-4">🗺️</div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Behavior Flow</h4>
-                    <p class="text-gray-600">Visualize the paths visitors take on your website, page by page.</p>
-                </div>
-                <!-- Feature Card 4 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
-                    <div class="text-5xl mb-4">🎯</div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Conversion Tracking</h4>
-                    <p class="text-gray-600">Measure how often visitors complete desired actions, like purchases or sign-ups.</p>
-                </div>
-                <!-- Feature Card 5 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
-                    <div class="text-5xl mb-4">📱</div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Mobile Analytics</h4>
-                    <p class="text-gray-600">Analyze how users engage with your site on different devices, including smartphones and tablets.</p>
-                </div>
-                <!-- Feature Card 6 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
-                    <div class="text-5xl mb-4">📊</div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Real-time Data</h4>
-                    <p class="text-gray-600">See what's happening on your website right now, as visitors interact with it.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section id="benefits" class="py-16 bg-white rounded-3xl shadow-md mx-4 mt-8 md:mx-auto">
-        <div class="container text-center">
-            <h3 class="text-3xl font-bold text-pink-600 mb-8">Why You'll Adore Using Google Analytics! 💖</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-pink-50 p-6 rounded-xl shadow-md flex items-start space-x-4">
-                    <div class="text-4xl text-pink-500">💡</div>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Smarter Decisions</h4>
-                        <p class="text-gray-600">Stop guessing and start making data-driven choices to improve your website's performance.</p>
-                    </div>
-                </div>
-                <div class="bg-blue-50 p-6 rounded-xl shadow-md flex items-start space-x-4">
-                    <div class="text-4xl text-blue-500">✨</div>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Boost Growth</h4>
-                        <p class="text-gray-600">Identify what's working and what's not to fine-tune your strategies and achieve your goals faster.</p>
-                    </div>
-                </div>
-                <div class="bg-green-50 p-6 rounded-xl shadow-md flex items-start space-x-4">
-                    <div class="text-4xl text-green-500">💰</div>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Optimize ROI</h4>
-                        <p class="text-gray-600">Ensure your marketing spend is effective by tracking conversions and campaign performance.</p>
-                    </div>
-                </div>
-                <div class="bg-purple-50 p-6 rounded-xl shadow-md flex items-start space-x-4">
-                    <div class="text-4xl text-purple-500">🤝</div>
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Better User Experience</h4>
-                        <p class="text-gray-600">Discover user pain points and improve navigation and content to keep visitors happy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section id="cta" class="py-20 bg-gradient-to-bl from-yellow-100 to-orange-100 text-center rounded-3xl shadow-xl mx-4 my-8 md:mx-auto">
-        <div class="container">
-            <h3 class="text-4xl md:text-5xl font-extrabold text-orange-700 mb-6 leading-tight">
-                Ready to Uncover Your Website's Secrets? 🤩
-            </h3>
-            <p class="text-lg md:text-xl text-gray-700 mb-10 max-w-2xl mx-auto">
-                It's super easy to get started! Integrate Google Analytics today and begin your journey to a more informed and successful online presence.
-            </p>
-            <a href="https://analytics.google.com/analytics/web/" target="_blank" rel="noopener noreferrer"
-               class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-5 px-10 rounded-full shadow-xl transform hover:scale-105 transition duration-300 ease-in-out text-xl animate-bounce-slow">
-                Start Your Analytics Adventure!
-            </a>
-            <p class="text-sm text-gray-500 mt-6">
-                (Psst... it's completely FREE to use!)
-            </p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 mt-8 rounded-t-3xl">
-        <div class="container text-center">
-            <p class="text-lg">&copy; 2025 Analytics Magic. All rights reserved. ✨</p>
-            <p class="text-sm mt-2">Made with love and data.</p>
-        </div>
-    </footer>
-
-    <!-- Simple bouncy animation for CTA button -->
-    <style>
-        @keyframes bounce-slow {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-8px);
-            }
-        }
-        .animate-bounce-slow {
-            animation: bounce-slow 2s infinite ease-in-out;
-        }
-    </style>
-
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 mt-8 rounded-t-3xl">
+    <div class="container text-center">
+      <p class="text-lg">&copy; 2025 Analytics Magic. All rights reserved. ✨</p>
+      <p class="text-sm mt-2">Made with love and data.</p>
+    </div>
+  </footer>
 </body>
 </html>
